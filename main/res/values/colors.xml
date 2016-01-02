@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!--1E90FF-->
+    <color name="colorPrimary">#319AF2</color>
+    <color name="colorPrimaryDark">#198CED</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#134f8a</color>
+    <color name="blue">#000099</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#696969</color>
+    <color name="lightgrey">#B7CEEC</color>
+    <color name="transparent">#00000000</color>
+    <color name="tab_highlight">#ff9ecfbf</color>
+    <color name="green">#00a812</color>
+    <color name="darkblue">#4169e1</color>
+    <color name="dblue">#3688ba</color>
+    <color name="yellow">#ffd700</color>
+    <color name="pink">#f23165</color>
+    <color name="red">#ff0000</color>
+    <color name="darkgrey">#727272</color>
+
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+</resources>

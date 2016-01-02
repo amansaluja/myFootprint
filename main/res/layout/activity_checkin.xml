@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheckinActivity"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@drawable/map_background">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_checkin" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:id="@+id/popupscreen"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:background="#e8e8ea"
+                    android:id="@+id/imageCapture">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/image"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cam_icon"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/cam_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cam_icon"
+                        android:text="Attach a photo(optional)"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:id="@+id/cam_text"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <in.myfootprint.myfootprint.views.RoundedImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/profileImage"/>
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey"
+                        android:text="I just checked in"
+                        android:selectAllOnFocus="true"
+                        android:textSize="12sp"
+                        android:singleLine="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:maxLength="90"
+                        android:inputType="textCapSentences"
+                        android:id="@+id/description"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/person_icon"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey"
+                        android:text="at"
+                        android:textSize="12sp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="right"
+                        android:layout_weight="0.2"
+                        android:singleLine="true"/>
+
+                    <AutoCompleteTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey"
+                        android:hint="Search your friend"
+                        android:textSize="12sp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="4"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/person"
+                        android:maxLength="70"
+                        android:focusable="true"
+                        android:singleLine="true"
+                        android:drawableRight="@drawable/search_icon"/>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey"
+                        android:text="'s Place"
+                        android:textSize="12sp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:singleLine="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_icon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"/>
+
+                    <CheckBox
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_share"
+                        android:text="Facebook"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:id="@+id/checkbox1"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_share"
+                        android:text="Private"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:id="@+id/checkbox2"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@color/grey"
+            android:layout_weight="0.5"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/checkinButton">
+
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/fabfp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHECK-IN"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="in.myfootprint.myfootprint.navigation.FragmentDrawerFragmentFragment"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />-->
+
+</android.support.v4.widget.DrawerLayout>

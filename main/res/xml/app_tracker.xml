@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <string name="ga_trackingId">ga_trackingId</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <screenName name="in.myfootprint.myfootprint.activities.AddressActivity">Address Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.activities.CheckinActivity">CheckIn Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.activities.IntroductionActivity">Login Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.activities.MapActivity">Map Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.CheckinConfirmFragment">CheckIn Approved Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.CouponFragment">Coupon Detail Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.FeedFragment">Feed Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.InviteFragment">Invite Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.NotificationFragment">Notification Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.PlaceProfileFragment">Place Profile Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.RedeemFragment">Redeem Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.ReviewAddressFragment">Review Address Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.ReviewCheckinFragment">Review CheckIn Screen</screenName>
+
+    <screenName name="in.myfootprint.myfootprint.fragments.UserProfileFragment">User Profile Screen</screenName>
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+</resources>

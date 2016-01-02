@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.myfootprint.myfootprint.activities.CheckinActivity">
+
+    <item android:id="@+id/action_tick"
+        android:title="Check-in"
+        android:icon="@drawable/white_tick"
+        app:showAsAction="always" />
+
+</menu>

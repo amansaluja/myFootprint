@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="LocationNames">
+        <item>ATM</item>
+        <item>Worship</item>
+        <item>Restaurant</item>
+        <item>Hotel</item>
+        <item>Hospital</item>
+        <item>Park</item>
+        <item>Shopping Mall</item>
+        <item>Gym</item>
+        <item>Movie</item>
+        <item>Bar</item>
+        <item>Bank</item>
+        <item>Fun</item>
+        <item>Night Club</item>
+        <item>Museum</item>
+        <item>Laundry</item>
+        <item>Book Store</item>
+        <item>Hardware Store</item>
+        <item>Train Station</item>
+        <item>Court House</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Fire Station</item>
+        <item>Cemetery</item>
+        <item>Fuel Station</item>
+        <item>Grocery</item>
+        <item>Hindu Temple</item>
+        <item>Mosque</item>
+        <item>Airport</item>
+        <item>Library</item>
+        <item>Parking</item>
+        <item>Pharmacy</item>
+        <item>Police</item>
+        <item>Post Office</item>
+        <item>School</item>
+        <item>Zoo</item>
+        <item>Bus Station</item>
+        <item>Subway Station</item>
+        <item>Synagogue</item>
+        <item>Veterinary Care</item>
+    </string-array>
+
+</resources>

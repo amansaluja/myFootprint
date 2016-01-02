@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/action_place"
+        android:title="Place"
+        android:icon="@drawable/home_icon_white"
+        app:showAsAction="always"/>
+
+    <!-- Refresh -->
+    <item android:id="@+id/action_notification"
+        android:title="Notification"
+        app:actionLayout="@layout/cart_bubble"
+        android:icon="@drawable/notif_icon"
+        app:showAsAction="always"/>
+
+    <!--<item android:id="@+id/action_person"
+        android:title="Person"
+        android:icon="@drawable/user_icon"
+        app:showAsAction="always"/>-->
+</menu>
